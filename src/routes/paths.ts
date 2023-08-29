@@ -1,6 +1,9 @@
 // ----------------------------------------------------------------------
 
 export const paths = {
+  pilot: {
+    root: '/landing'
+  },
   // Marketing
   marketing: {
     root: '/marketing',

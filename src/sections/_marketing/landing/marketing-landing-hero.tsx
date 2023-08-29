@@ -47,16 +47,15 @@ export default function MarketingLandingHero() {
             }}
           >
             <Typography variant="overline" sx={{ color: 'secondary.main' }}>
-              Digital Marketing
+              o7k Smart Living
             </Typography>
 
             <Typography variant="h1" sx={{ my: 3 }}>
-              Boosts Your Website Traffic
+              Twój dom w nowej, smart erze!
             </Typography>
 
             <Typography sx={{ color: 'text.secondary' }}>
-              Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis
-              venenatis ante odio sit amet eros.
+              Przekształć swój dom w inteligentną przestrzeń życiową dzięki o7k Smart Living. Dołącz do naszego programu pilotażowego i bądź częścią przyszłości już dziś!
             </Typography>
 
             <Stack
@@ -67,15 +66,8 @@ export default function MarketingLandingHero() {
               sx={{ mt: 5 }}
             >
               <Button variant="contained" color="inherit" size="large">
-                Try For Free
+                Zobacz więcej szczegółów!
               </Button>
-
-              <Stack direction="row" alignItems="center" sx={{ typography: 'h6' }}>
-                <Fab size="medium" sx={{ mr: 1 }}>
-                  <Iconify width={24} icon="carbon:play" />
-                </Fab>
-                See Our Work
-              </Stack>
             </Stack>
           </Grid>
 

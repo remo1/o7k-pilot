@@ -12,10 +12,11 @@ import { SettingsDrawer, SettingsProvider } from 'src/components/settings';
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Zone UI Kit',
+  title: 'o7k Smart Living - Inteligentne Domy w Programie Pilotażowym',
   description:
-    'The ZONE is built on top of MUI, a powerful library that provides flexible, customizable, and easy-to-use components.',
-  keywords: 'react,material,kit,application,dashboard,admin,template',
+    'Zapraszamy do udziału w wyjątkowym programie pilotażowym od o7k Smart Living. Zainstaluj inteligentne rozwiązania w swoim domu za cenę sprzętu. Dowiedz się więcej!',
+  keywords:
+    'inteligentny dom, smart home, o7k Smart Living, program pilotażowy, automatyka domowa, zabezpieczenia, oszczędność energii, pilotaż, instalacja, oprogramowanie',
   themeColor: '#000000',
   manifest: '/manifest.json',
   icons: [
@@ -49,14 +50,14 @@ type Props = {
 
 export default function RootLayout({ children }: Props) {
   return (
-    <html lang="en" className={primaryFont.className}>
+    <html lang="pl" className={primaryFont.className}>
       <body>
         <LocalizationProvider>
           <SettingsProvider
             defaultSettings={{
-              themeMode: 'light', // 'light' | 'dark'
+              themeMode: 'dark', // 'light' | 'dark'
               themeDirection: 'ltr', //  'rtl' | 'ltr'
-              themeColorPresets: 'default', // 'default' | 'cyan' | 'purple' | 'blue' | 'orange' | 'red'
+              themeColorPresets: 'blue', // 'default' | 'cyan' | 'purple' | 'blue' | 'orange' | 'red'
             }}
           >
             <ThemeProvider>
