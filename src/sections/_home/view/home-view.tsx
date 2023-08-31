@@ -2,19 +2,16 @@
 
 import { useScroll } from 'framer-motion';
 
-import { _pricingHome } from 'src/_mock';
 import ScrollProgress from 'src/components/scroll-progress';
 
-import HomeFAQs from '../home-faqs';
-import HomeNewStart from '../home-new-start';
-import HomeCombination from '../home-combination';
-import HomeForDesigner from '../home-for-designer';
-import HomeAdvertisement from '../home-advertisement';
-import PricingHome from '../../pricing/home/pricing-home';
-import HomeFeatureHighlights from '../home-feature-highlights';
-import HomeFlexibleComponents from '../home-flexible-components';
-import MarketingLandingHero from '../../_marketing/landing/marketing-landing-hero';
 import HomeHero from "../home-hero";
+import MarketingServices from "../../_marketing/services/marketing-services";
+import ElearningAboutCoreValues from "../../_elearning/about/elearning-about-core-values";
+import MarketingLandingServices from "../../_marketing/landing/marketing-landing-services";
+import MarketingServicesBenefits from "../../_marketing/services/marketing-services-benefits";
+import MarketingServicesHowItWork from "../../_marketing/services/marketing-services-how-it-work";
+import MarketingLandingFaqs from "../../_marketing/landing/marketing-landing-faqs";
+import HomeFAQs from "../home-faqs";
 
 // ----------------------------------------------------------------------
 
@@ -26,21 +23,37 @@ export default function HomeView() {
 
       <HomeHero />
 
-      <HomeNewStart />
+      <MarketingServices />
 
-      <HomeFlexibleComponents />
+      <MarketingLandingServices />
 
-      <HomeFeatureHighlights />
+      <ElearningAboutCoreValues />
 
-      <HomeForDesigner />
+      <MarketingServicesHowItWork />
 
-      <PricingHome plans={_pricingHome} />
+      <MarketingServicesBenefits />
 
       <HomeFAQs />
 
-      <HomeCombination />
 
-      <HomeAdvertisement />
+      {/* <MarketingServicesInclude /> */}
+
+
+      {/* <HomeNewStart /> */}
+
+      {/* <HomeFlexibleComponents /> */}
+
+      {/* <HomeFeatureHighlights /> */}
+
+      {/* <HomeForDesigner /> */}
+
+      {/* <PricingHome plans={_pricingHome} /> */}
+
+      {/* <HomeFAQs /> */}
+
+      {/* <HomeCombination /> */}
+
+      {/* <HomeAdvertisement /> */}
     </>
   );
 }

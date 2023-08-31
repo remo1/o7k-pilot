@@ -16,32 +16,58 @@ import { useResponsive } from 'src/hooks/use-responsive';
 
 const TIMELINES = [
   {
-    step: 'STEP 1',
-    title: 'Planning',
+    step: 'KROK 1: Wstępna konsultacja',
+    title: 'Dowiedz się, czego naprawdę potrzebujesz',
     description:
-      'Curabitur ullamcorper ultricies nisi. Praesent nonummy mi in odio. Donec mollis hendrerit risus.',
+      'Omów swoje potrzeby, preferencje i cele, aby określić, jakie funkcje inteligentnego domu będą dla Ciebie najlepsze.',
   },
   {
-    step: 'STEP 2',
-    title: 'Research',
+    step: 'Krok 2: Zbieranie wymagań',
+    title: 'Dostosowanie do specyfikacji',
     description:
-      'Curabitur ullamcorper ultricies nisi. Praesent nonummy mi in odio. Donec mollis hendrerit risus.',
+      'Podczas wspólnej rozmowy dopracowujemy szczegóły tego, czego szukasz, kształtując inteligentny dom Twoich marzeń.',
   },
   {
-    step: 'STEP 3',
-    title: 'Optimizing',
+    step: 'Krok 3: Plan projektu',
+    title: 'Opracowanie planu inteligentnego domu',
     description:
-      'Curabitur ullamcorper ultricies nisi. Praesent nonummy mi in odio. Donec mollis hendrerit risus.',
+      'Stworzymy kompleksowy plan projektu, który obejmuje układ instalacji elektrycznej oraz sieci domowej, dostosowany do Twoich konkretnych potrzeb.',
   },
   {
-    step: 'STEP 4',
-    title: 'Results',
+    step: 'Krok 4: Wyposażenie i instalacja',
+    title: 'Wprowadzanie planu w życie',
     description:
-      'Curabitur ullamcorper ultricies nisi. Praesent nonummy mi in odio. Donec mollis hendrerit risus.',
+      'Na podstawie planu zainstalujemy wymagany sprzęt, a także zajmiemy się konfiguracją elektryczną i sieci LAN.',
+  },
+  {
+    step: 'Krok 5: Konfiguracja i testowanie systemu',
+    title: 'Zapewnienie bezbłędnego działania',
+    description:
+      'Skonfigurujemy i rygorystycznie przetestujemy wszystkie funkcje, aby upewnić się, że wszystko działa idealnie w nowym inteligentnym domu.',
+  },
+  {
+    step: 'Krok 6: Praktyczne szkolenie',
+    title: 'Opanuj nową technologię',
+    description:
+      'Przeprowadzimy praktyczne warsztaty, które pomogą ci zrozumieć, jak obsługiwać i korzystać z systemu inteligentnego domu.',
+  },
+  {
+    step: 'Krok 7: Końcowy przegląd i odbiór',
+    title: 'Finalizacja',
+    description:
+      'Podczas końcowej rozmowy dokonamy przeglądu instalacji, odpowiemy na wszelkie pytania i sfinalizujemy Twoje wejście w bardziej inteligentne życie.',
   },
 ];
 
-const COLORS = ['primary', 'secondary', 'warning', 'success'] as const;
+const COLORS = [
+  'secondary',
+  'primary',
+  'success',
+  'success',
+  'error',
+  'primary',
+  'info',
+] as const;
 
 // ----------------------------------------------------------------------
 
@@ -63,7 +89,7 @@ export default function MarketingServicesHowItWork() {
     >
       <Container>
         <Typography variant="h2" sx={{ textAlign: 'center' }}>
-          How It Works
+          Twoja droga do inteligentnego życia
         </Typography>
 
         <Typography
@@ -76,7 +102,7 @@ export default function MarketingServicesHowItWork() {
             mb: { xs: 8, md: 10 },
           }}
         >
-          Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
+          Szczegółowe kroki od pierwszej konsultacji do finalnej akceptacji
         </Typography>
 
         <Timeline position={mdUp ? 'alternate' : 'right'}>

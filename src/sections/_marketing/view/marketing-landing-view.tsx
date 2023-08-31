@@ -32,7 +32,7 @@ export default function MarketingLandingView() {
 
       <MarketingOurClients brands={_brands} />
 
-      <MarketingLandingAbout />
+      {/*<MarketingLandingAbout />*/}
 
       <MarketingLandingServices />
 

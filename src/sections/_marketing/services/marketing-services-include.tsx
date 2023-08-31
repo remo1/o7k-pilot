@@ -8,33 +8,51 @@ import SvgColor from 'src/components/svg-color';
 
 const SERVICES = [
   {
-    title: 'Search Engine Optimization',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Inteligentne oświetlenie',
+    description:
+      'Automatyczne sterowanie oświetleniem w zależności od pory dnia, obecności w pomieszczeniu czy preferencji użytkownika',
     icon: '/assets/icons/ic_statistics.svg',
   },
   {
-    title: 'Social Media Strategy',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Zarządzanie temperaturą',
+    description:
+      'Regulacja temperatury w zależności od pory dnia, pogody na zewnątrz i preferencji użytkownika',
     icon: '/assets/icons/ic_social_media.svg',
   },
   {
-    title: 'Real Time and Data',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Inteligentne rolety i żaluzje',
+    description:
+      'Automatyczne zasłanianie i odsłanianie w zależności od pory dnia oraz poziomu nasłonecznienia',
     icon: '/assets/icons/ic_real_time.svg',
   },
   {
-    title: 'Online Media Management',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Zarządzanie energią',
+    description: 'Monitorowanie zużycia energii oraz optymalizacja wykorzystania prądu w domu',
     icon: '/assets/icons/ic_checklist.svg',
   },
   {
-    title: 'Reporting & Analysis',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Bezpieczeństwo i monitoring',
+    description: 'Inteligentne kamery i czujniki, które zapewniają bezpieczeństwo domowników',
     icon: '/assets/icons/ic_report.svg',
   },
   {
-    title: 'Penalty Recovery',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Bezpieczna lokalna sieć',
+    description: 'Skonfigurowana sieć LAN i Wifi, zapewniająca ochronę i szybkość działania',
+    icon: '/assets/icons/ic_file.svg',
+  },
+  {
+    title: 'Notyfikacje i powiadomienia',
+    description: 'Automatyczne powiadomienia o ważnych zdarzeniach w domu na Twojego smartfona',
+    icon: '/assets/icons/ic_file.svg',
+  },
+  {
+    title: 'Jednostka centrala o7k-station',
+    description: 'Umożliwia zdalny dostęp do monitoringu CCTV, automatyki i innych funkcji',
+    icon: '/assets/icons/ic_file.svg',
+  },
+  {
+    title: 'Dostosowywalność i rozbudowa systemu',
+    description: 'Możliwość łatwej rozbudowy i dostosowania systemu do indywidualnych potrzeb',
     icon: '/assets/icons/ic_file.svg',
   },
 ];
@@ -50,7 +68,7 @@ export default function MarketingServicesInclude() {
         pb: { xs: 10, md: 15 },
       }}
     >
-      <Typography variant="h2">Services Include</Typography>
+      <Typography variant="h2">Lista funkcji w ramach programu pilotażowego</Typography>
 
       <Typography
         sx={{
@@ -61,7 +79,7 @@ export default function MarketingServicesInclude() {
           mb: { xs: 8, md: 10 },
         }}
       >
-        Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
+        Przekształć swój dom w innowacyjne środowisko dzięki najnowocześniejszym technologiom
       </Typography>
 
       <Box

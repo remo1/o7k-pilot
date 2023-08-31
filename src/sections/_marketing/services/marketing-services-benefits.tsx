@@ -10,33 +10,39 @@ import { useResponsive } from 'src/hooks/use-responsive';
 
 const BENEFITS = [
   {
-    title: 'Online Media',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Regularne spotkania',
+    description:
+      'Rozmawiaj z nami regularnie, dając nam znać, jak Ci idzie i co Ci się podoba (lub nie)',
     iconColor: 'primary',
   },
   {
-    title: 'Design',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Kilka szybkich ankiet',
+    description:
+      'Poświęć kilka minut, aby powiedzieć nam, co Ci odpowiada, a co mogłoby być lepsze. Naprawdę cenimy Twoją opinię!',
     iconColor: 'success',
   },
   {
-    title: 'Marketing',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Bądź na bieżąco',
+    description:
+      'Wypatruj aktualizacji! Będziemy dodawać nowe fajne funkcje i chcielibyśmy poznać Twoje opinie na ich temat',
     iconColor: 'secondary',
   },
   {
-    title: 'HR & Recruiting',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
-    iconColor: 'secondary',
-  },
-  {
-    title: 'Management',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Tweetuj, publikuj, udostępniaj',
+    description:
+      'Jeśli podoba Ci się to, co robimy, będziemy zachwyceni, jeśli podzielisz się tym ze swoim kręgiem',
     iconColor: 'success',
   },
   {
-    title: 'Branding',
-    description: 'Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. ',
+    title: 'Podziel się swoją historią',
+    description:
+      'Opowiedz nam o swoich doświadczeniach, opublikujemy Twoją historię, by zainspirować innych',
+    iconColor: 'secondary',
+  },
+  {
+    title: 'Końcowe podsumowanie',
+    description:
+      'Kiedy wszystko zostanie już powiedziane i zrobione, z przyjemnością porozmawiamy o Twojej podróży z nami',
     iconColor: 'primary',
   },
 ];
@@ -55,7 +61,7 @@ export default function MarketingServicesBenefits() {
     >
       <Container>
         <Typography variant="h2" sx={{ textAlign: 'center' }}>
-          Benefits Achieved
+          Współtwórz przyszłość inteligentnych domów
         </Typography>
 
         <Typography
@@ -68,7 +74,7 @@ export default function MarketingServicesBenefits() {
             mb: { xs: 8, md: 10 },
           }}
         >
-          Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
+          Krótki opis zobowiązań w naszym programie pilotażowym
         </Typography>
 
         <Box

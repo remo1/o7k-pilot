@@ -13,10 +13,10 @@ import { RouterLink } from 'src/routes/components';
 // ----------------------------------------------------------------------
 
 const LISTS = [
-  'First Class Flights',
-  '5 Star Accommodations',
-  'Inclusive Packages',
-  'Latest Model Vehicles',
+  'Kompleksowa usługa od instalacji po utrzymanie',
+  'Oparte na sprawdzonym oprogramowaniu open source',
+  'Ukierunkowane na przyszłe innowacje i aktualizacje',
+  'Ekskluzywne korzyści dla uczestników programu pilotażowego',
 ];
 
 // ----------------------------------------------------------------------
@@ -36,12 +36,13 @@ export default function MarketingServices() {
 
         <Grid xs={12} md={6} lg={6}>
           <Stack spacing={3} sx={{ mb: 5 }}>
-            <Typography variant="h2">Offline SEO</Typography>
+            <Typography variant="h2">Kim jesteśmy?</Typography>
 
             <Typography sx={{ color: 'text.secondary' }}>
-              Aenean commodo ligula eget dolor. Sed hendrerit. Vestibulum ante ipsum primis in
-              faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer
-              lacinia.
+              Jesteśmy pionierami przyszłości automatyki domowej. Nasze
+              kompleksowe usługi 360 obejmują instalację, oryginalne oprogramowanie i bieżące
+              wsparcie. Zrób pierwszy krok w kierunku inteligentnego domu, dołączając do naszego
+              programu pilotażowego!
             </Typography>
 
             <Stack spacing={2}>
@@ -71,7 +72,7 @@ export default function MarketingServices() {
             variant="outlined"
             endIcon={<Iconify icon="carbon:chevron-right" />}
           >
-            Check Our Work
+            Dowiedz się więcej
           </Button>
         </Grid>
       </Grid>

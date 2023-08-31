@@ -17,34 +17,69 @@ import { varFade, MotionViewport } from 'src/components/animate';
 import Pattern01 from 'src/assets/illustrations/pattern/pattern-01';
 
 // ----------------------------------------------------------------------
-
 const CONTENTS = [
   {
-    question: `What's in the product packages?`,
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
+    question: `Czym jest o7k smart living?`,
+    answer: (
+      <>
+        o7k Smart Living to podejście do automatyzacji domowej, które ma na celu uczynić Twoje życie
+        bardziej komfortowym, bezpiecznym i efektywnym. Nasz system integruje różne aspekty Twojego
+        domu w jedno, spójne i przyjazne dla użytkownika doświadczenie.
+      </>
+    ),
   },
   {
-    question: 'How can I upgrade my product plan?',
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
+    question: `Na czym konkretnie polega Program Pilotażowy?`,
+    answer: (
+      <>
+        Nasz Program Pilotażowy to unikatowa okazja, by być jednym z pierwszych użytkowników naszych
+        rozwiązań i aktywnie pomagać w ich udoskonaleniu. Oferujemy niższe ceny w zamian za Twoje
+        opinie i sugestie.
+      </>
+    ),
   },
   {
-    question: 'Are design assets (Figma, Sketch, Adobe XD) included?',
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
+    question: 'Jaką kwotę powinienem zarezerwować na udział w programie?',
+    answer: (
+      <>
+        Koszt uczestnictwa w programie jest niższy niż rynkowa cena instalacji, ale obejmuje także
+        koszty związane z projektem instalacji elektrycznej i samą instalacją, w tym materiały budowlane.
+        <p>
+          Ważne jest jednak, aby zauważyć, że w zamian za tą specjalną cenę, oczekujemy Twojego
+          współudziału w różnych etapach rozwoju naszego produktu.
+        </p>
+        <p>
+          To sytuacja korzystna dla obu stron: Ty dostajesz technologie inteligentnego domu w
+          niższej cenie, a my uzyskujemy bezcenne spostrzeżenia do zbudowania naszej oferty.
+        </p>
+      </>
+    ),
   },
   {
-    question: 'Does this product support TypeScript?',
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
+    question: 'Czy mogę wycofać się z programu pilotażowego?',
+    answer: (
+      <>
+        Możesz podjąć ostateczną decyzję o uczestnictwie po spotkaniu, w którym przedstawimy Ci
+        dokładny koszt całej instalacji. Jeśli zgodzisz się na warunki i podpiszemy umowę, razem
+        stworzymy niesamowite doświadczenie w zakresie inteligentnego domu! Do tego czasu masz pełną
+        możliwość rezygnacji w dowolnym czasie.
+      </>
+    ),
   },
   {
-    question: 'Can I use this template in commercial projects like a SaaS?',
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
-  },
-  {
-    question: 'How can I request support?',
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
+    question: 'Z jakimi technologicznymi rozwiązaniami mogę się zetknąć w ramach programu?',
+    answer: (
+      <>
+        Używamy różnych technologii, zarówno komercyjnych, jak i dostępnych publicznie, aby zapewnić
+        jak najlepsze doświadczenie smart living. W zakresie sprzętu korzystamy z modułów automatyki
+        budowlanej belgijskiej firmy Velbus w połączeniu z naszą własną stacją o7k. 'o7k-station' to
+        serce Twojego inteligentnego domu, dbające o bezpieczeństwo sieci domowej i umożliwiające
+        zdalne sterowanie oraz inne praktyczne funkcje. Na poziomie oprogramowania wspieramy się
+        projektami open-source takimi jak HomeAssistant, Kubernetes, Prometheus, Grafana i inne.
+      </>
+    ),
   },
 ];
-
 // ----------------------------------------------------------------------
 
 export default function HomeFAQs() {
@@ -71,7 +106,7 @@ export default function HomeFAQs() {
         <Grid xs={12} md={8}>
           <m.div variants={varFade().in}>
             <Typography variant="h2" sx={{ textAlign: 'center' }}>
-              Frequently Asked Questions
+              Często zadawane pytania
             </Typography>
           </m.div>
 
@@ -127,12 +162,12 @@ export default function HomeFAQs() {
             }}
           >
             <m.div variants={varFade().inUp}>
-              <Typography variant="h3">Still Have Questions?</Typography>
+              <Typography variant="h3">Masz więcej pytań?</Typography>
             </m.div>
 
             <m.div variants={varFade().inUp}>
               <Typography sx={{ mt: 3, mb: 5, color: 'text.secondary' }}>
-                Please describe your case to receive the most accurate advice.
+                Skontaktuj się z nami po dodatkowe informacje
               </Typography>
             </m.div>
 
@@ -141,9 +176,9 @@ export default function HomeFAQs() {
                 size="large"
                 color="inherit"
                 variant="contained"
-                href="mailto:support@minimals.cc?subject=[Feedback] from Customer"
+                href="mailto:kontakt@o7k.pl"
               >
-                Contact us
+                Skontaktuj się z nami!
               </Button>
             </m.div>
           </Box>

@@ -13,11 +13,11 @@ const TextMaxLine = forwardRef<HTMLAnchorElement, TextMaxLineProps>(
     const { lineHeight } = useTypography(variant);
 
     const styles = {
-      overflow: 'hidden',
-      textOverflow: 'ellipsis',
-      display: '-webkit-box',
-      WebkitLineClamp: line,
-      WebkitBoxOrient: 'vertical',
+      // overflow: 'hidden',
+      // textOverflow: 'ellipsis',
+      // display: '-webkit-box',
+      // WebkitLineClamp: line,
+      // WebkitBoxOrient: 'vertical',
       ...(persistent && {
         height: lineHeight * line,
       }),

@@ -2,13 +2,10 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
-import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 
 import { paths } from 'src/routes/paths';
-import Iconify from 'src/components/iconify';
 import SvgColor from 'src/components/svg-color';
-import { RouterLink } from 'src/routes/components';
 import TextMaxLine from 'src/components/text-max-line';
 
 // ----------------------------------------------------------------------
@@ -17,27 +14,27 @@ const COLORS = ['primary', 'secondary', 'success', 'warning'] as const;
 
 const SERVICES = [
   {
-    name: 'SEO',
+    name: 'Innowacja w przystępnej cenie',
     icon: '/assets/icons/service/ic_service_seo.svg',
-    content: 'Nunc nonummy metus. Donec elit libero',
+    content: 'Uzyskaj najnowocześniejszą technologię inteligentnego domu za ułamek standardowej ceny',
     path: paths.marketing.services,
   },
   {
-    name: 'Email Marketing',
+    name: 'Bezpieczeństwo na Pierwszym Miejscu',
     icon: '/assets/icons/service/ic_service_mail.svg',
-    content: 'Nunc nonummy metus. Donec elit libero',
+    content: 'Zaawansowane środki bezpieczeństwa, aby chronić Twój dom i dane',
     path: paths.marketing.services,
   },
   {
-    name: 'Search Engine Oprimization',
+    name: 'Pełna Kontrola',
     icon: '/assets/icons/service/ic_service_analysis.svg',
-    content: 'Nunc nonummy metus. Donec elit libero',
+    content: 'Zarządzaj światłem, temperaturą, zabezpieczeniami i nie tylko—wszystko z jednej aplikacji',
     path: paths.marketing.services,
   },
   {
-    name: 'Social Marketing',
+    name: 'Gotowi na Przyszłość',
     icon: '/assets/icons/service/ic_service_bullhorn.svg',
-    content: 'Nunc nonummy metus. Donec elit libero',
+    content: 'Nasz system jest zaprojektowany do ewolucji. Oczekuj nowych funkcji i ulepszeń',
     path: paths.marketing.services,
   },
 ];
@@ -60,14 +57,12 @@ export default function MarketingLandingServices() {
           textAlign: { xs: 'center', md: 'unset' },
         }}
       >
-        <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-          Our Services
-        </Typography>
+        {/*<Typography variant="overline" sx={{ color: 'text.disabled' }} />*/}
 
-        <Typography variant="h2">We Provide</Typography>
+        <Typography variant="h2">Korzyści z programu</Typography>
 
         <Typography sx={{ color: 'text.secondary' }}>
-          Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
+          Odkryj zalety uczestnictwa w naszym programie pilotażowym
         </Typography>
       </Stack>
 
@@ -138,18 +133,18 @@ function ServiceItem({ service, index }: ServiceItemProps) {
         </TextMaxLine>
       </Stack>
 
-      <IconButton
-        component={RouterLink}
-        href={path}
-        color={
-          (index === 0 && 'primary') ||
-          (index === 1 && 'secondary') ||
-          (index === 2 && 'success') ||
-          'warning'
-        }
-      >
-        <Iconify icon="carbon:direction-straight-right" />
-      </IconButton>
+      {/* <IconButton */}
+      {/*  component={RouterLink} */}
+      {/*  href={path} */}
+      {/*  color={ */}
+      {/*    (index === 0 && 'primary') || */}
+      {/*    (index === 1 && 'secondary') || */}
+      {/*    (index === 2 && 'success') || */}
+      {/*    'warning' */}
+      {/*  } */}
+      {/* > */}
+      {/*  <Iconify icon="carbon:direction-straight-right" /> */}
+      {/* </IconButton> */}
     </Card>
   );
 }
