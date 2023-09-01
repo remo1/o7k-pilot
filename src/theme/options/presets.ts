@@ -13,8 +13,8 @@ export function presets(presetsColor: string) {
       secondary: color?.secondary,
     },
     customShadows: {
-      primary: `0 8px 16px 0 ${alpha(`${color?.primary?.main}`, 0.24)}`,
-      secondary: `0 8px 16px 0 ${alpha(`${color?.secondary?.main}`, 0.24)}`,
+      // primary: `0 8px 16px 0 ${alpha(`${color?.primary?.main}`, 0.24)}`,
+      // secondary: `0 8px 16px 0 ${alpha(`${color?.secondary?.main}`, 0.24)}`,
     },
   };
 
