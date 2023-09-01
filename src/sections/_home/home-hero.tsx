@@ -21,6 +21,7 @@ export default function HomeHero() {
 
   return (
     <Box
+      id="home"
       sx={{
         ...bgGradient({
           color: alpha(theme.palette.background.default, 0.9),

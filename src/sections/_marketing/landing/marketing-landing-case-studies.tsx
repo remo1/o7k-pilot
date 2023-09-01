@@ -11,7 +11,6 @@ import Typography from '@mui/material/Typography';
 import { alpha, useTheme } from '@mui/material/styles';
 
 import Image from 'src/components/image';
-import { paths } from 'src/routes/paths';
 import Iconify from 'src/components/iconify';
 import { RouterLink } from 'src/routes/components';
 import { ICaseStudyProps } from 'src/types/case-study';
@@ -105,7 +104,7 @@ export default function MarketingLandingCaseStudies({ caseStudies }: Props) {
       <Stack alignItems={{ xs: 'center', md: 'flex-end' }}>
         <Button
           component={RouterLink}
-          href={paths.marketing.caseStudies}
+          href="#"
           size="large"
           color="inherit"
           endIcon={<Iconify icon="carbon:chevron-right" />}
@@ -157,7 +156,7 @@ function LargeItem({ caseStudy }: LargeItemProps) {
 
         <Button
           component={RouterLink}
-          href={paths.marketing.caseStudy}
+          href="#"
           size="small"
           color="inherit"
           endIcon={<Iconify icon="carbon:chevron-right" />}
@@ -182,7 +181,7 @@ function SmallItem({ caseStudy, square }: SmallItemProps) {
   const mdUp = useResponsive('up', 'md');
 
   return (
-    <Link component={RouterLink} href={paths.marketing.caseStudy}>
+    <Link component={RouterLink} href="#">
       <Paper
         component={m.div}
         whileHover="hover"

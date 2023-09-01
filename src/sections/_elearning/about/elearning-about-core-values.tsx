@@ -4,7 +4,7 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 
-import SvgColor from "../../../components/svg-color";
+import SvgColor from '../../../components/svg-color';
 
 // ----------------------------------------------------------------------
 
@@ -69,7 +69,8 @@ const CORE_VALUES = [
   },
   {
     title: 'o7k-station',
-    description: 'Komputer który umożliwia zdalny dostęp do monitoringu CCTV, automatyki i innych funkcji',
+    description:
+      'Komputer który umożliwia zdalny dostęp do monitoringu CCTV, automatyki i innych funkcji',
     icon: '/assets/icons/ic_file.svg',
   },
   {
@@ -84,6 +85,7 @@ const CORE_VALUES = [
 export default function ElearningAboutCoreValues() {
   return (
     <Box
+      id="features"
       sx={{
         overflow: 'hidden',
         bgcolor: 'background.neutral',
@@ -103,7 +105,8 @@ export default function ElearningAboutCoreValues() {
           <Typography variant="h2">Przemień Swój Dom</Typography>
 
           <Typography sx={{ color: 'text.secondary', maxWidth: { md: 540 } }}>
-            Od automatyzacji po oszczędność energii - poznaj funkcje naszego spersonalizowanego programu pilotażowego
+            Od automatyzacji po oszczędność energii - poznaj funkcje naszego spersonalizowanego
+            programu pilotażowego
           </Typography>
         </Stack>
 

@@ -21,44 +21,55 @@ export default function MarketingContactInfo() {
         />
       )}
 
-      <Stack spacing={2} direction="row" alignItems="flex-start">
-        <Iconify icon="carbon:location" width={28} />
-
+      <Stack spacing={3} alignItems="flex-start" direction="row">
         <Stack spacing={0.5}>
-          <Stack spacing={1} direction="row" alignItems="center">
-            <Typography variant="h6">Visit us</Typography>
+          <Link color="inherit" variant="body2" href="tel:+4873070539">
+            <Typography variant="h5">Kontakt:</Typography>
+          </Link>
+        </Stack>
+      </Stack>
 
-            <Link sx={{ lineHeight: 0 }}>
-              <Iconify icon="carbon:launch" width={18} />
+      <Stack spacing={2} alignItems="flex-start" direction="row">
+        <Iconify width={28} icon="carbon:user-avatar-filled" />
+        <Stack direction="column">
+          <Stack spacing={0.5}>
+            <Link
+              color="inherit"
+              variant="body2"
+              href="https://www.linkedin.com/in/remyo/"
+              target="_blank"
+              underline="always"
+            >
+              <Typography variant="h6">Remigiusz Oleszczuk</Typography>
             </Link>
           </Stack>
+        </Stack>
+      </Stack>
 
-          <Typography variant="body2">508 Bridle Avenue Newnan, GA 30263e</Typography>
+      <Stack spacing={2} alignItems="flex-start" direction="row">
+        <Iconify width={28} icon="carbon:identification" />
+        <Stack spacing={0.5}>
+          <Typography variant="h6">5372572675</Typography>
         </Stack>
       </Stack>
 
       <Stack spacing={2} alignItems="flex-start" direction="row">
         <Iconify width={28} icon="carbon:mobile" />
         <Stack spacing={0.5}>
-          <Typography variant="h6">Call us</Typography>
-        </Stack>
-      </Stack>
-
-      <Stack spacing={2} alignItems="flex-start" direction="row">
-        <Iconify width={28} icon="carbon:email" />
-        <Stack spacing={0.5}>
-          <Typography variant="h6">Talk to us</Typography>
-          <Link color="inherit" variant="body2" href="mailto:hello@example.com">
-            hello@example.com
+          <Link color="inherit" variant="body2" href="tel:+4873070539">
+            <Typography variant="h6">730 070 539</Typography>
           </Link>
         </Stack>
       </Stack>
 
+
+
       <Stack spacing={2} alignItems="flex-start" direction="row">
-        <Iconify width={28} icon="carbon:time" />
+        <Iconify width={28} icon="carbon:email" />
         <Stack spacing={0.5}>
-          <Typography variant="h6">Working Hours</Typography>
-          <Typography variant="body2">Mon-Fri: 9 am — 6 pm</Typography>
+          <Link color="inherit" variant="body2" href="mailto:hello@example.com">
+            <Typography variant="h6">kontakt@o7k.pl</Typography>
+          </Link>
         </Stack>
       </Stack>
     </Stack>

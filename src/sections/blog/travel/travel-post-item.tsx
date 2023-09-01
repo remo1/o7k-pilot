@@ -25,7 +25,7 @@ export default function TravelPostItem({ post }: Props) {
       <Stack spacing={1}>
         <PostTimeBlock createdAt={fDate(post.createdAt)} duration={post.duration} />
 
-        <Link component={RouterLink} href={paths.travel.post} color="inherit">
+        <Link component={RouterLink} href={paths.travel?.post} color="inherit">
           <TextMaxLine variant="h5" persistent>
             {post.title}
           </TextMaxLine>

@@ -54,6 +54,7 @@ export default function MarketingServicesBenefits() {
 
   return (
     <Box
+      id='cooperation'
       sx={{
         bgcolor: 'background.neutral',
         py: { xs: 10, md: 15 },

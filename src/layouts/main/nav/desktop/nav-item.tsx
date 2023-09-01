@@ -1,9 +1,10 @@
+import { m } from 'framer-motion';
 import { forwardRef } from 'react';
 
 import Link from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
 
 import Iconify from 'src/components/iconify';
-import { RouterLink } from 'src/routes/components';
 
 import { NavItemProps } from '../types';
 
@@ -42,11 +43,24 @@ export const NavItem = forwardRef<HTMLDivElement, NavItemProps>(
       return renderContent;
     }
 
-    // Default
+    // // Default
+    // return (
+    //   <Link component={RouterLink} href={item.path} color="inherit" underline="none">
+    //     {renderContent}
+    //   </Link>
+    // );
+
     return (
-      <Link component={RouterLink} href={item.path} color="inherit" underline="none">
+      <Typography
+        component={m.div}
+        sx={{ height: '100%' }}
+        onClick={() => {
+          const el = document.getElementById(item.path);
+          el?.scrollIntoView({ behavior: 'smooth' });
+        }}
+      >
         {renderContent}
-      </Link>
+      </Typography>
     );
   }
 );

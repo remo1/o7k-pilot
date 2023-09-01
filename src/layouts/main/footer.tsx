@@ -1,5 +1,4 @@
 import Link from '@mui/material/Link';
-import Masonry from '@mui/lab/Masonry';
 import Divider from '@mui/material/Divider';
 import Collapse from '@mui/material/Collapse';
 import TextField from '@mui/material/TextField';
@@ -18,10 +17,8 @@ import Iconify from 'src/components/iconify';
 import { usePathname } from 'src/routes/hooks';
 import { useBoolean } from 'src/hooks/use-boolean';
 import { RouterLink } from 'src/routes/components';
-import { useResponsive } from 'src/hooks/use-responsive';
 
 import { NavListProps } from './nav/types';
-import { pageLinks, navConfig } from './config-navigation';
 
 // ----------------------------------------------------------------------
 
@@ -39,24 +36,24 @@ const StyledAppStoreButton = styled(Button)(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function Footer() {
-  const mdUp = useResponsive('up', 'md');
+  // const mdUp = useResponsive('up', 'md');
 
   const pathname = usePathname();
 
-  const mobileList = navConfig.find((i) => i.title === 'Pages')?.children || [];
-
-  const desktopList = pageLinks.sort((listA, listB) => Number(listA.order) - Number(listB.order));
-
-  const renderLists = mdUp ? desktopList : mobileList;
+  // const mobileList = navConfig.find((i) => i.title === 'Pages') || [];
+  //
+  // const desktopList = pageLinks.sort((listA, listB) => Number(listA.order) - Number(listB.order));
+  //
+  // const renderLists = mdUp ? desktopList : mobileList;
 
   const isHome = pathname === '/';
 
   const simpleFooter = (
     <Container sx={{ py: 8, textAlign: 'center' }}>
-      <Logo single />
+      <Logo />
 
       <Typography variant="caption" component="div" sx={{ color: 'text.secondary' }}>
-        © 2023. All rights reserved
+        © 2023. Wszystkie prawa zastrzeżone
       </Typography>
     </Container>
   );
@@ -140,21 +137,21 @@ export default function Footer() {
             </Stack>
           </Grid>
 
-          <Grid xs={12} md={6}>
-            {mdUp ? (
-              <Masonry columns={4} spacing={2} defaultColumns={4} defaultSpacing={2}>
-                {renderLists.map((list) => (
-                  <ListDesktop key={list.subheader} list={list} />
-                ))}
-              </Masonry>
-            ) : (
-              <Stack spacing={1.5}>
-                {renderLists.map((list) => (
-                  <ListMobile key={list.subheader} list={list} />
-                ))}
-              </Stack>
-            )}
-          </Grid>
+          {/* <Grid xs={12} md={6}> */}
+          {/* {mdUp ? ( */}
+          {/*   <Masonry columns={4} spacing={2} defaultColumns={4} defaultSpacing={2}> */}
+          {/*     {renderLists.map((list) => ( */}
+          {/*       <ListDesktop key={list.subheader} list={list} /> */}
+          {/*     ))} */}
+          {/*   </Masonry> */}
+          {/* ) : ( */}
+          {/*   <Stack spacing={1.5}> */}
+          {/*     {renderLists.map((list) => ( */}
+          {/*       <ListMobile key={list.subheader} list={list} /> */}
+          {/*     ))} */}
+          {/*   </Stack> */}
+          {/* )} */}
+          {/* </Grid> */}
         </Grid>
       </Container>
 

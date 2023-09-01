@@ -3,23 +3,31 @@ import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 
 import Stack from '@mui/material/Stack';
+import Select from '@mui/material/Select';
+import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
+import InputLabel from '@mui/material/InputLabel';
 import LoadingButton from '@mui/lab/LoadingButton';
+import FormControl from '@mui/material/FormControl';
 import FormHelperText from '@mui/material/FormHelperText';
 import ToggleButton, { toggleButtonClasses } from '@mui/material/ToggleButton';
 
-import { _tags } from 'src/_mock';
-import { fCurrency } from 'src/utils/format-number';
-import FormProvider, { RHFSlider, RHFTextField } from 'src/components/hook-form';
+import FormProvider, { RHFTextField } from 'src/components/hook-form';
 
 // ----------------------------------------------------------------------
 
+const state = ['zerowy', 'surowy otwarty', 'surowy zamknięty', 'prace wykończeniowe'];
+
 export default function MarketingContactForm() {
   const MarketingContactSchema = Yup.object().shape({
-    services: Yup.array().required().min(1, 'Services field must have at least 1 items'),
-    email: Yup.string().required('Email is required').email('That is not an email'),
-    compnany: Yup.string().required('Compnany is required'),
-    website: Yup.string().required('Website is required'),
+    firstName: Yup.string().required('Pole imienia nie może być puste'),
+    lastName: Yup.string().required('Pole nazwiska nie może być puste'),
+    phoneNumber: Yup.string().required('Wprowadź prawidłowy numer telefonu'),
+    email: Yup.string()
+      .required('Pole email nie może być puste')
+      .email('Wprowadź prawidłowy adres e-mail'),
+    preferredContactInfo: Yup.string().required('Proszę wybrać preferowaną formę kontaktu'),
+    services: Yup.array().required().min(1, 'Proszę wybrać obecny stan inwestycji'),
   });
 
   const defaultValues = {
@@ -28,10 +36,8 @@ export default function MarketingContactForm() {
     lastName: '',
     email: '',
     phoneNumber: '',
-    compnany: '',
-    website: '',
-    budget: [2000, 10000],
     message: '',
+    preferredContactInfo: '',
   };
 
   const methods = useForm({
@@ -64,13 +70,45 @@ export default function MarketingContactForm() {
   return (
     <FormProvider methods={methods} onSubmit={onSubmit}>
       <Stack spacing={2.5} alignItems="flex-start">
+        <Stack
+          spacing={{ xs: 2.5, md: 2 }}
+          direction={{ xs: 'column', md: 'row' }}
+          sx={{ width: 1 }}
+        >
+          <RHFTextField name="firstName" label="Imię" />
+          <RHFTextField name="lastName" label="Nazwisko" />
+        </Stack>
+
+        <RHFTextField name="email" label="Email" />
+        <RHFTextField name="phoneNumber" label="Numer telefonu" />
+
+        <Controller
+          name="preferredContactInfo"
+          control={control}
+          render={({ field, fieldState: { error } }) => (
+            <FormControl fullWidth>
+              <InputLabel id="preferredContactInfo">Preferowana forma kontaktu</InputLabel>
+              {/* @ts-ignore */}
+              <Select label="Preferowana forma kontaktu" defaultValue="tel" fullWidth {...field}>
+                <MenuItem value="tel">Telefon komórkowy</MenuItem>
+                <MenuItem value="email">Email</MenuItem>
+              </Select>
+
+              {!!error && <FormHelperText error>{error?.message}</FormHelperText>}
+            </FormControl>
+          )}
+        />
+
         <Controller
           name="services"
           control={control}
           render={({ field, fieldState: { error } }) => (
             <div>
-              <Stack direction="row" flexWrap="wrap" spacing={1}>
-                {_tags.slice(0, 5).map((service) => (
+              <Typography variant="overline" sx={{ color: 'text.disabled', mb: 1, mt: 1 }}>
+                Obecny stan inwestycji:
+              </Typography>
+              <Stack direction="row" flexWrap="wrap" alignItems="center" spacing={1}>
+                {state.map((service) => (
                   <ToggleButton
                     {...field}
                     key={service}
@@ -105,44 +143,7 @@ export default function MarketingContactForm() {
             </div>
           )}
         />
-
-        <Stack
-          spacing={{ xs: 2.5, md: 2 }}
-          direction={{ xs: 'column', md: 'row' }}
-          sx={{ width: 1 }}
-        >
-          <RHFTextField name="firstName" label="First Name" />
-          <RHFTextField name="lastName" label="Last Name" />
-        </Stack>
-
-        <RHFTextField name="email" label="Email" />
-        <RHFTextField name="phoneNumber" label="Phone number" />
-
-        <Stack
-          direction={{ xs: 'column', md: 'row' }}
-          spacing={{ xs: 2.5, md: 2 }}
-          sx={{ width: 1 }}
-        >
-          <RHFTextField name="compnany" label="Compnany" />
-
-          <RHFTextField name="website" label="Website" />
-        </Stack>
-
-        <Stack spacing={5} sx={{ py: 2, width: 1 }}>
-          <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-            Your Budget
-          </Typography>
-
-          <RHFSlider
-            name="budget"
-            valueLabelDisplay="on"
-            max={20000}
-            step={1000}
-            valueLabelFormat={(value) => fCurrency(value)}
-          />
-        </Stack>
-
-        <RHFTextField name="message" label="Message" multiline rows={4} />
+        <RHFTextField name="message" label="Pytania / Uwagi" multiline rows={4} />
       </Stack>
 
       <LoadingButton
@@ -153,7 +154,7 @@ export default function MarketingContactForm() {
         loading={isSubmitting}
         sx={{ mt: 3 }}
       >
-        Send Request
+        Wyślij
       </LoadingButton>
     </FormProvider>
   );

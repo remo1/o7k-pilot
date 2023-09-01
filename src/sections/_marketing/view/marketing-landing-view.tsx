@@ -14,7 +14,6 @@ import MarketingNewsletter from '../marketing-newsletter';
 import MarketingOurClients from '../marketing-our-clients';
 import MarketingLandingHero from '../landing/marketing-landing-hero';
 import MarketingLandingFaqs from '../landing/marketing-landing-faqs';
-import MarketingLandingAbout from '../landing/marketing-landing-about';
 import MarketingTestimonial from '../testimonial/marketing-testimonial';
 import PricingMarketing from '../../pricing/marketing/pricing-marketing';
 import MarketingLandingProcess from '../landing/marketing-landing-process';
@@ -31,8 +30,6 @@ export default function MarketingLandingView() {
       <MarketingLandingHero />
 
       <MarketingOurClients brands={_brands} />
-
-      {/*<MarketingLandingAbout />*/}
 
       <MarketingLandingServices />
 

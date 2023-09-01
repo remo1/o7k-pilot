@@ -1,7 +1,4 @@
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import { useTheme } from '@mui/material/styles';
@@ -9,15 +6,11 @@ import Container from '@mui/material/Container';
 
 import Logo from 'src/components/logo';
 import { bgBlur } from 'src/theme/css';
-import Label from 'src/components/label';
-import { paths } from 'src/routes/paths';
 import { useOffSetTop } from 'src/hooks/use-off-set-top';
 import { useResponsive } from 'src/hooks/use-responsive';
 
 import { HEADER } from '../config-layout';
-import Searchbar from '../common/searchbar';
 import HeaderShadow from '../common/header-shadow';
-import SettingsButton from '../common/settings-button';
 
 import NavMobile from './nav/mobile';
 import NavDesktop from './nav/desktop';
@@ -70,25 +63,25 @@ export default function Header({ headerOnDark }: Props) {
 
           {mdUp && <NavDesktop data={navConfig} />}
 
-          {/*<Stack spacing={2} direction="row" alignItems="center" justifyContent="flex-end">*/}
-          {/*  <Stack spacing={1} direction="row" alignItems="center">*/}
-          {/*    <Searchbar />*/}
+          {/* <Stack spacing={2} direction="row" alignItems="center" justifyContent="flex-end"> */}
+          {/*  <Stack spacing={1} direction="row" alignItems="center"> */}
+          {/*    <Searchbar /> */}
 
-          {/*    <SettingsButton />*/}
-          {/*  </Stack>*/}
+          {/*    <SettingsButton /> */}
+          {/*  </Stack> */}
 
-          {/*  {mdUp && (*/}
-          {/*    <Button*/}
-          {/*      variant="contained"*/}
-          {/*      color="inherit"*/}
-          {/*      href={paths.zoneStore}*/}
-          {/*      target="_blank"*/}
-          {/*      rel="noopener"*/}
-          {/*    >*/}
-          {/*      Buy Now*/}
-          {/*    </Button>*/}
-          {/*  )}*/}
-          {/*</Stack>*/}
+          {/*  {mdUp && ( */}
+          {/*    <Button */}
+          {/*      variant="contained" */}
+          {/*      color="inherit" */}
+          {/*      href={paths.zoneStore} */}
+          {/*      target="_blank" */}
+          {/*      rel="noopener" */}
+          {/*    > */}
+          {/*      Buy Now */}
+          {/*    </Button> */}
+          {/*  )} */}
+          {/* </Stack> */}
 
           {!mdUp && <NavMobile data={navConfig} />}
         </Container>

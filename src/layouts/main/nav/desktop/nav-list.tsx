@@ -1,4 +1,4 @@
-import { useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
@@ -10,10 +10,10 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Label from 'src/components/label';
 import Image from 'src/components/image';
 import { usePathname } from 'src/routes/hooks';
-import { useBoolean } from 'src/hooks/use-boolean';
 import { RouterLink } from 'src/routes/components';
-import { useActiveLink } from 'src/routes/hooks/use-active-link';
+import { useBoolean } from 'src/hooks/use-boolean';
 
+import { navConfig } from '../../config-navigation';
 import { NavListProps, NavItemBaseProps } from '../types';
 
 import { NavItem } from './nav-item';
@@ -23,10 +23,9 @@ import { StyledMenu, StyledSubheader } from './styles';
 
 export default function NavList({ item }: { item: NavItemBaseProps }) {
   const pathname = usePathname();
+  const [active, setActive] = useState<string>('home');
 
   const menuOpen = useBoolean();
-
-  const active = useActiveLink(item.path, false);
 
   const externalLink = item.path.includes('http');
 
@@ -35,6 +34,36 @@ export default function NavList({ item }: { item: NavItemBaseProps }) {
   const commonList = item.children
     ? item.children.find((list) => list.subheader === 'Common')
     : null;
+
+  const headerOffset = 50; // You can adjust this value based on your actual header height
+
+  const handleScroll = () => {
+    let currentActive = '';
+    const offsets = navConfig.map((section) => {
+      const el = document.getElementById(section.path.replace('#', ''));
+      if (!el) return false;
+      return {
+        id: section.path,
+        offsetTop: el.offsetTop - headerOffset,
+        offsetBottom: el.offsetTop + el.clientHeight - headerOffset,
+      };
+    });
+    // @ts-ignore
+    // eslint-disable-next-line no-restricted-syntax
+    for (const offset of offsets) {
+      // @ts-ignore
+      if (window.scrollY + 200 >= offset.offsetTop && window.scrollY + 200 < offset.offsetBottom) {
+        // @ts-ignore
+        currentActive = offset.id;
+        break;
+      }
+    }
+    setActive(currentActive);
+  };
+
+  useEffect(() => {
+    document.addEventListener('scroll', (e) => handleScroll());
+  }, []);
 
   useEffect(() => {
     if (menuOpen.value) {
@@ -53,7 +82,7 @@ export default function NavList({ item }: { item: NavItemBaseProps }) {
     <>
       <NavItem
         item={item}
-        active={active}
+        active={active === item.path}
         open={menuOpen.value}
         externalLink={externalLink}
         onMouseEnter={handleOpenMenu}

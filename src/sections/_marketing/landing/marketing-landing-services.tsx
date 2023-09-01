@@ -4,7 +4,6 @@ import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
-import { paths } from 'src/routes/paths';
 import SvgColor from 'src/components/svg-color';
 import TextMaxLine from 'src/components/text-max-line';
 
@@ -16,26 +15,28 @@ const SERVICES = [
   {
     name: 'Innowacja w przystępnej cenie',
     icon: '/assets/icons/service/ic_service_seo.svg',
-    content: 'Uzyskaj najnowocześniejszą technologię inteligentnego domu za ułamek standardowej ceny',
-    path: paths.marketing.services,
+    content:
+      'Uzyskaj najnowocześniejszą technologię inteligentnego domu za ułamek standardowej ceny',
+    path: '#',
   },
   {
     name: 'Bezpieczeństwo na Pierwszym Miejscu',
     icon: '/assets/icons/service/ic_service_mail.svg',
     content: 'Zaawansowane środki bezpieczeństwa, aby chronić Twój dom i dane',
-    path: paths.marketing.services,
+    path: '#',
   },
   {
     name: 'Pełna Kontrola',
     icon: '/assets/icons/service/ic_service_analysis.svg',
-    content: 'Zarządzaj światłem, temperaturą, zabezpieczeniami i nie tylko—wszystko z jednej aplikacji',
-    path: paths.marketing.services,
+    content:
+      'Zarządzaj światłem, temperaturą, zabezpieczeniami i nie tylko—wszystko z jednej aplikacji',
+    path: '#',
   },
   {
     name: 'Gotowi na Przyszłość',
     icon: '/assets/icons/service/ic_service_bullhorn.svg',
     content: 'Nasz system jest zaprojektowany do ewolucji. Oczekuj nowych funkcji i ulepszeń',
-    path: paths.marketing.services,
+    path: '#',
   },
 ];
 
@@ -44,6 +45,7 @@ const SERVICES = [
 export default function MarketingLandingServices() {
   return (
     <Container
+      id='korzysci'
       sx={{
         py: { xs: 5, md: 10 },
       }}
@@ -57,7 +59,7 @@ export default function MarketingLandingServices() {
           textAlign: { xs: 'center', md: 'unset' },
         }}
       >
-        {/*<Typography variant="overline" sx={{ color: 'text.disabled' }} />*/}
+        {/* <Typography variant="overline" sx={{ color: 'text.disabled' }} /> */}
 
         <Typography variant="h2">Korzyści z programu</Typography>
 

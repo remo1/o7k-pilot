@@ -43,7 +43,8 @@ const CONTENTS = [
     answer: (
       <>
         Koszt uczestnictwa w programie jest niższy niż rynkowa cena instalacji, ale obejmuje także
-        koszty związane z projektem instalacji elektrycznej i samą instalacją, w tym materiały budowlane.
+        koszty związane z projektem instalacji elektrycznej i samą instalacją, w tym materiały
+        budowlane.
         <p>
           Ważne jest jednak, aby zauważyć, że w zamian za tą specjalną cenę, oczekujemy Twojego
           współudziału w różnych etapach rozwoju naszego produktu.
@@ -68,16 +69,13 @@ const CONTENTS = [
   },
   {
     question: 'Z jakimi technologicznymi rozwiązaniami mogę się zetknąć w ramach programu?',
-    answer: (
-      <>
-        Używamy różnych technologii, zarówno komercyjnych, jak i dostępnych publicznie, aby zapewnić
+    answer: ` Używamy różnych technologii, zarówno komercyjnych, jak i dostępnych publicznie, aby zapewnić
         jak najlepsze doświadczenie smart living. W zakresie sprzętu korzystamy z modułów automatyki
         budowlanej belgijskiej firmy Velbus w połączeniu z naszą własną stacją o7k. 'o7k-station' to
         serce Twojego inteligentnego domu, dbające o bezpieczeństwo sieci domowej i umożliwiające
         zdalne sterowanie oraz inne praktyczne funkcje. Na poziomie oprogramowania wspieramy się
         projektami open-source takimi jak HomeAssistant, Kubernetes, Prometheus, Grafana i inne.
-      </>
-    ),
+      `,
   },
 ];
 // ----------------------------------------------------------------------
@@ -96,6 +94,7 @@ export default function HomeFAQs() {
 
   return (
     <Container
+      id="faq"
       component={MotionViewport}
       sx={{
         position: 'relative',
@@ -172,12 +171,7 @@ export default function HomeFAQs() {
             </m.div>
 
             <m.div variants={varFade().inUp}>
-              <Button
-                size="large"
-                color="inherit"
-                variant="contained"
-                href="mailto:kontakt@o7k.pl"
-              >
+              <Button size="large" color="inherit" variant="contained" href="mailto:kontakt@o7k.pl">
                 Skontaktuj się z nami!
               </Button>
             </m.div>

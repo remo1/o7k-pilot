@@ -5,7 +5,6 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 
-import { paths } from 'src/routes/paths';
 import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
 import { RouterLink } from 'src/routes/components';
@@ -24,6 +23,7 @@ const LISTS = [
 export default function MarketingServices() {
   return (
     <Container
+      id="kimjestesmy"
       sx={{
         pt: { xs: 10, md: 15 },
         pb: { xs: 5, md: 10 },
@@ -39,10 +39,9 @@ export default function MarketingServices() {
             <Typography variant="h2">Kim jesteśmy?</Typography>
 
             <Typography sx={{ color: 'text.secondary' }}>
-              Jesteśmy pionierami przyszłości automatyki domowej. Nasze
-              kompleksowe usługi 360 obejmują instalację, oryginalne oprogramowanie i bieżące
-              wsparcie. Zrób pierwszy krok w kierunku inteligentnego domu, dołączając do naszego
-              programu pilotażowego!
+              Jesteśmy pionierami przyszłości automatyki domowej. Nasze kompleksowe usługi 360
+              obejmują instalację, oryginalne oprogramowanie i bieżące wsparcie. Zrób pierwszy krok
+              w kierunku inteligentnego domu, dołączając do naszego programu pilotażowego!
             </Typography>
 
             <Stack spacing={2}>
@@ -66,7 +65,7 @@ export default function MarketingServices() {
 
           <Button
             component={RouterLink}
-            href={paths.marketing.caseStudies}
+            href="#"
             size="large"
             color="inherit"
             variant="outlined"
