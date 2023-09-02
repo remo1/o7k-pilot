@@ -1,4 +1,3 @@
-import { alpha } from '@mui/material/styles';
 
 import { palette as themePalette } from 'src/theme/palette';
 
