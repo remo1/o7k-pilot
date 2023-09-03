@@ -47,10 +47,6 @@ export default function HomeHero() {
               textAlign: { xs: 'center', md: 'left' },
             }}
           >
-            {/* <Typography variant="overline" sx={{ color: 'secondary.main' }}> */}
-            {/*  o7k Smart Living */}
-            {/* </Typography> */}
-
             <Typography variant="h1" sx={{ my: 3 }}>
               Twój dom w nowej,
               <Box component="span" sx={{ color: 'primary.main' }}>

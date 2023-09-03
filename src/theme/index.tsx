@@ -10,12 +10,11 @@ import { useSettingsContext } from 'src/components/settings';
 
 import { palette } from './palette';
 import { shadows } from './shadows';
+import RTL from './options/right-to-left';
 import { typography } from './typography';
 import { presets } from './options/presets';
-import { darkMode } from './options/dark-mode';
 import { customShadows } from './custom-shadows';
 import { componentsOverrides } from './overrides';
-import RTL, { direction } from './options/right-to-left';
 
 // ----------------------------------------------------------------------
 
@@ -26,11 +25,7 @@ type Props = {
 export default function ThemeProvider({ children }: Props) {
   const settings = useSettingsContext();
 
-  const darkModeOption = darkMode(settings.themeMode);
-
   const presetsOption = presets(settings.themeColorPresets);
-
-  const directionOption = direction(settings.themeDirection);
 
   const baseOption = useMemo(
     () => ({
@@ -48,14 +43,10 @@ export default function ThemeProvider({ children }: Props) {
       merge(
         // Base
         baseOption,
-        // Direction: remove if not in use
-        directionOption,
-        // Dark mode: remove if not in use
-        darkModeOption,
         // Presets: remove if not in use
         presetsOption
       ),
-    [baseOption, darkModeOption, directionOption, presetsOption]
+    [baseOption, presetsOption]
   );
 
   const theme = createTheme(memoizedValue as ThemeOptions);

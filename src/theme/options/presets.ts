@@ -1,4 +1,3 @@
-
 import { palette as themePalette } from 'src/theme/palette';
 
 // ----------------------------------------------------------------------
@@ -12,8 +11,8 @@ export function presets(presetsColor: string) {
       secondary: color?.secondary,
     },
     customShadows: {
-      primary: "0 8px 16px 0 rgba(7, 141, 238, 0.24)",
-      secondary: "0 8px 16px 0 rgba(255, 160, 63, 0.24)",
+      primary: '0 8px 16px 0 rgba(7, 141, 238, 0.24)',
+      secondary: '0 8px 16px 0 rgba(255, 160, 63, 0.24)',
     },
   };
 
@@ -97,7 +96,7 @@ export const presetOptions = [
 
   // BLUE - ORANGE
   {
-    name: 'preset03',
+    name: 'preset06',
     primary: {
       lighter: '#CCF4FE',
       light: '#68CDF9',
@@ -113,27 +112,6 @@ export const presetOptions = [
       dark: '#B75D1F',
       darker: '#7A2D0C',
       contrastText: palette.grey[800],
-    },
-  },
-
-  // GREEN - ORANGE
-  {
-    name: 'preset04',
-    primary: {
-      lighter: '#DBF7EE',
-      light: '#8BD0C7',
-      main: '#2D6365',
-      dark: '#163E48',
-      darker: '#082130',
-      contrastText: '#FFFFFF',
-    },
-    secondary: {
-      lighter: '#FEEFD5',
-      light: '#FBC182',
-      main: '#F37F31',
-      dark: '#AE4318',
-      darker: '#741B09',
-      contrastText: '#FFFFFF',
     },
   },
 ];

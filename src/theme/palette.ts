@@ -8,10 +8,12 @@ declare module '@mui/material/styles/createPalette' {
   interface TypeBackground {
     neutral: string;
   }
+
   interface SimplePaletteColorOptions {
     lighter: string;
     darker: string;
   }
+
   interface PaletteColor {
     lighter: string;
     darker: string;
@@ -87,13 +89,33 @@ const ERROR = {
   contrastText: '#FFFFFF',
 };
 
+const BLUE = {
+  name: 'default',
+  primary: {
+    lighter: '#CCF4FE',
+    light: '#68CDF9',
+    main: '#078DEE',
+    dark: '#0351AB',
+    darker: '#012972',
+    contrastText: '#FFFFFF',
+  },
+  secondary: {
+    lighter: '#FFF3D8',
+    light: '#FFD18B',
+    main: '#FFA03F',
+    dark: '#B75D1F',
+    darker: '#7A2D0C',
+    contrastText: GREY[800],
+  },
+};
+
 const COMMON = {
   common: {
     black: '#000000',
     white: '#FFFFFF',
   },
-  primary: PRIMARY,
-  secondary: SECONDARY,
+  primary: BLUE.primary,
+  secondary: BLUE.secondary,
   info: INFO,
   success: SUCCESS,
   warning: WARNING,
