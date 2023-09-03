@@ -48,16 +48,14 @@ export default function HomeHero() {
             }}
           >
             <Typography variant="h1" sx={{ my: 3 }}>
-              Twój dom w nowej,
+              Postaw na inteligencję z
               <Box component="span" sx={{ color: 'primary.main' }}>
-                {` smart `}
-              </Box>
-              erze!
+                {` o7k`}
+              </Box>!
             </Typography>
 
             <Typography sx={{ color: 'text.secondary' }}>
-              o7k Smart Living oferuje rozwiązania inteligentnego domu w ramach unikalnego programu
-              pilotażowego. Zainstaluj najnowsze technologie za cenę samego sprzętu
+              Weź udział w naszym wyjątkowym programie pilotażowym i przekształć swój dom w zaawansowany system smart home!
             </Typography>
 
             <Stack
@@ -68,7 +66,7 @@ export default function HomeHero() {
               sx={{ mt: 5 }}
             >
               <Button variant="contained" color="inherit" size="large">
-                Dołącz do przyszłości już dziś!
+                Zainwestuj w Przyszłość!
               </Button>
             </Stack>
           </Grid>

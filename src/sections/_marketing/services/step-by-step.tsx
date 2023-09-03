@@ -17,57 +17,49 @@ import { useResponsive } from 'src/hooks/use-responsive';
 const TIMELINES = [
   {
     step: 'KROK 1: Wstępna konsultacja',
-    title: 'Dowiedz się, czego naprawdę potrzebujesz',
+    title: 'Odkryj Możliwości Inteligentnego Domu',
     description:
-      'Omów swoje potrzeby, preferencje i cele, aby określić, jakie funkcje inteligentnego domu będą dla Ciebie najlepsze.',
+      'Dowiedz się, jakie funkcje inteligentnego domu są dla Ciebie najlepsze. Zdefiniuj swoje potrzeby i cele podczas wstępnej konsultacji',
   },
   {
-    step: 'Krok 2: Zbieranie wymagań',
-    title: 'Dostosowanie do specyfikacji',
+    step: 'Krok 2: Spersonalizowane Wymagania',
+    title: 'Dokładne Określenie Twoich Potrzeb',
     description:
-      'Podczas wspólnej rozmowy dopracowujemy szczegóły tego, czego szukasz, kształtując inteligentny dom Twoich marzeń.',
+      'Podczas wspólnej rozmowy dopracowujemy szczegóły tego, czego szukasz, kształtując inteligentny dom Twoich marzeń',
   },
   {
-    step: 'Krok 3: Plan projektu',
-    title: 'Opracowanie planu inteligentnego domu',
+    step: 'Krok 3: Indywidualny Plan Projektu',
+    title: 'Otrzymaj kompleksowy plan',
     description:
-      'Stworzymy kompleksowy plan projektu, który obejmuje układ instalacji elektrycznej oraz sieci domowej, dostosowany do Twoich konkretnych potrzeb.',
+      'Stworzymy kompleksowy plan projektu, który obejmuje układ instalacji elektrycznej oraz sieci domowej, dostosowany do Twoich konkretnych potrzeb',
   },
   {
-    step: 'Krok 4: Wyposażenie i instalacja',
-    title: 'Wprowadzanie planu w życie',
+    step: 'Krok 4: Profesjonalna Instalacja',
+    title: 'Realizacja planu',
     description:
-      'Na podstawie planu zainstalujemy wymagany sprzęt, a także zajmiemy się konfiguracją elektryczną i sieci LAN.',
+      'Na podstawie planu zainstalujemy wymagany sprzęt, a także zajmiemy się konfiguracją systemu i sieci LAN',
   },
   {
-    step: 'Krok 5: Konfiguracja i testowanie systemu',
-    title: 'Zapewnienie bezbłędnego działania',
+    step: 'Krok 5: Testy i Konfiguracja',
+    title: 'Zapewnienie Wysokiej Jakości Działania',
     description:
-      'Skonfigurujemy i rygorystycznie przetestujemy wszystkie funkcje, aby upewnić się, że wszystko działa idealnie w nowym inteligentnym domu.',
+      'Przeprowadzimy dokładne testy i konfiguracje systemu, aby zagwarantować, że wszystko działa zgodnie z oczekiwaniami',
   },
   {
-    step: 'Krok 6: Praktyczne szkolenie',
-    title: 'Opanuj nową technologię',
+    step: 'Krok 6: Praktyczne szkolenie z obsługi',
+    title: 'Osiągnij Pełen Komfort Obsługi',
     description:
-      'Przeprowadzimy praktyczne warsztaty, które pomogą ci zrozumieć, jak obsługiwać i korzystać z systemu inteligentnego domu.',
+      'Przedstawimy Ci podstawy i najlepsze praktyki obsługi Twojego nowego systemu inteligentnego domu. Nauczysz się, jak efektywnie zarządzać wszystkimi jego funkcjami, aby maksymalnie wykorzystać możliwości, które oferuje',
   },
   {
-    step: 'Krok 7: Końcowy przegląd i odbiór',
-    title: 'Finalizacja',
+    step: 'Krok 7: Finalizacja i Weryfikacja',
+    title: 'Zatwierdzenie Twojego Inteligentnego Domu',
     description:
-      'Podczas końcowej rozmowy dokonamy przeglądu instalacji, odpowiemy na wszelkie pytania i sfinalizujemy Twoje wejście w bardziej inteligentne życie.',
+      'W trakcie naszego ostatniego spotkania przeprowadzimy szczegółowy przegląd całego systemu. Odpowiemy na wszelkie pozostałe pytania i upewnimy się, że jesteś w pełni zadowolony z nowego, inteligentnego życia, które przed Tobą',
   },
 ];
 
-const COLORS = [
-  'secondary',
-  'primary',
-  'success',
-  'success',
-  'error',
-  'primary',
-  'info',
-] as const;
+const COLORS = ['secondary', 'primary', 'success', 'success', 'error', 'primary', 'info'] as const;
 
 // ----------------------------------------------------------------------
 

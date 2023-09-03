@@ -12,10 +12,10 @@ import { RouterLink } from 'src/routes/components';
 // ----------------------------------------------------------------------
 
 const LISTS = [
-  'Kompleksowa usługa od instalacji po utrzymanie',
-  'Oparte na sprawdzonym oprogramowaniu open source',
-  'Ukierunkowane na przyszłe innowacje i aktualizacje',
-  'Ekskluzywne korzyści dla uczestników programu pilotażowego',
+  'Od projektu przez instalację do bieżącego wsparcia: jesteśmy z Tobą na każdym etapie',
+  'Wykorzystujemy zaufane technologie open-source',
+  'Regularne aktualizacje i innowacyjne rozwiązania ',
+  'Wyjątkowe korzyści dla uczestników programu pilotażowego',
 ];
 
 // ----------------------------------------------------------------------
@@ -39,9 +39,9 @@ export default function MarketingServices() {
             <Typography variant="h2">Kim jesteśmy?</Typography>
 
             <Typography sx={{ color: 'text.secondary' }}>
-              Jesteśmy pionierami przyszłości automatyki domowej. Nasze kompleksowe usługi 360
-              obejmują instalację, oryginalne oprogramowanie i bieżące wsparcie. Zrób pierwszy krok
-              w kierunku inteligentnego domu, dołączając do naszego programu pilotażowego!
+              Jesteśmy zespołem specjalistów w dziedzinie automatyki domowej i inteligentnych
+              rozwiązań dla Twojego domu. Nasza oferta to więcej niż tylko produkty; to kompleksowa
+              usługa, która przekształca Twój dom w inteligentne miejsce życia.
             </Typography>
 
             <Stack spacing={2}>
