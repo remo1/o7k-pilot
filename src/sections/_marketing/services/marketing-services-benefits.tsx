@@ -30,7 +30,7 @@ const BENEFITS = [
   {
     title: 'Tweetuj, publikuj, udostępniaj',
     description:
-      'Jeśli podoba Ci się to, co robimy, będziemy zachwyceni, jeśli podzielisz się tym ze swoim kręgiem',
+      'Jeśli podoba Ci się to, co robimy, będziemy zachwyceni, jeśli podzielisz się tym na social media!',
     iconColor: 'success',
   },
   {
