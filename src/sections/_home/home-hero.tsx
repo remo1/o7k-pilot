@@ -15,8 +15,6 @@ import { useResponsive } from 'src/hooks/use-responsive';
 export default function HomeHero() {
   const theme = useTheme();
 
-  console.log(theme);
-
   const mdUp = useResponsive('up', 'md');
 
   return (

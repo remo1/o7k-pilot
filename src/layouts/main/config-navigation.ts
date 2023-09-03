@@ -111,7 +111,7 @@ export const navConfig = [
   { title: 'Home', path: 'home' },
   { title: 'Kim jesteśmy', path: 'kimjestesmy' },
   { title: 'Korzyści z programu', path: 'korzysci' },
-  { title: 'Features', path: 'features' },
+  { title: 'Funkcje systemu', path: 'features' },
   { title: 'Droga', path: 'stepbystep' },
   { title: 'Współpraca', path: 'cooperation' },
   { title: 'FAQ', path: 'faq' },
