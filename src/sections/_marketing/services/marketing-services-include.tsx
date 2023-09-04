@@ -33,27 +33,27 @@ const SERVICES = [
   {
     title: 'Bezpieczeństwo i monitoring',
     description: 'Inteligentne kamery i czujniki, które zapewniają bezpieczeństwo domowników',
-    icon: '/assets/icons/ic_report.svg',
+    icon: '/assets/icons/securitu-monitoring.svg',
   },
   {
     title: 'Bezpieczna lokalna sieć',
     description: 'Skonfigurowana sieć LAN i Wifi, zapewniająca ochronę i szybkość działania',
-    icon: '/assets/icons/ic_file.svg',
+    icon: '/assets/icons/lan.svg',
   },
   {
     title: 'Notyfikacje i powiadomienia',
     description: 'Automatyczne powiadomienia o ważnych zdarzeniach w domu na Twojego smartfona',
-    icon: '/assets/icons/ic_file.svg',
+    icon: '/assets/icons/lan.svg',
   },
   {
     title: 'Jednostka centrala o7k-station',
     description: 'Umożliwia zdalny dostęp do monitoringu CCTV, automatyki i innych funkcji',
-    icon: '/assets/icons/ic_file.svg',
+    icon: '/assets/icons/lan.svg',
   },
   {
     title: 'Dostosowywalność i rozbudowa systemu',
     description: 'Możliwość łatwej rozbudowy i dostosowania systemu do indywidualnych potrzeb',
-    icon: '/assets/icons/ic_file.svg',
+    icon: '/assets/icons/lan.svg',
   },
 ];
 
