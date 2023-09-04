@@ -3,7 +3,7 @@
 import { _testimonials, _marketingPosts } from 'src/_mock';
 
 import MarketingNewsletter from '../marketing-newsletter';
-import MarketingServices from '../services/marketing-services';
+import WhoWeAre from '../services/who-we-are';
 import MarketingServicesHero from '../services/marketing-services-hero';
 import MarketingTestimonial from '../testimonial/marketing-testimonial';
 import MarketingLandingFreeSEO from '../landing/marketing-landing-free-seo';
@@ -19,7 +19,7 @@ export default function MarketingServicesView() {
     <>
       <MarketingServicesHero />
 
-      <MarketingServices />
+      <WhoWeAre />
 
       <MarketingServicesInclude />
 

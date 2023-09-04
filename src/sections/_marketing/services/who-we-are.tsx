@@ -20,7 +20,7 @@ const LISTS = [
 
 // ----------------------------------------------------------------------
 
-export default function MarketingServices() {
+export default function WhoWeAre() {
   return (
     <Container
       id="kimjestesmy"
