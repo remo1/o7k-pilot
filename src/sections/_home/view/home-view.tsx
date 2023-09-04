@@ -4,14 +4,14 @@ import { useScroll } from 'framer-motion';
 
 import ScrollProgress from 'src/components/scroll-progress';
 
-import HomeHero from '../home-hero';
 import HomeFAQs from '../home-faqs';
+import HomeHero from '../home-hero';
 import WhoWeAre from '../../_marketing/services/who-we-are';
-import MarketingContactFormSection from '../home-contact-form';
+import Contact from '../home-contact-form';
 import StepByStep from '../../_marketing/services/step-by-step';
-import ElearningAboutCoreValues from '../../_elearning/about/elearning-about-core-values';
-import MarketingLandingServices from '../../_marketing/landing/marketing-landing-services';
-import MarketingServicesBenefits from '../../_marketing/services/marketing-services-benefits';
+import Benefits from '../../_marketing/landing/marketing-landing-services';
+import Features from '../../_elearning/about/elearning-about-core-values';
+import Price from '../../_marketing/services/marketing-services-benefits';
 
 // ----------------------------------------------------------------------
 
@@ -25,17 +25,17 @@ export default function HomeView() {
 
       <WhoWeAre />
 
-      <MarketingLandingServices />
+      <Benefits />
 
-      <ElearningAboutCoreValues />
+      <Features />
 
       <StepByStep />
 
-      <MarketingServicesBenefits />
+      <Price />
 
       <HomeFAQs />
 
-      <MarketingContactFormSection />
+      <Contact />
     </>
   );
 }
