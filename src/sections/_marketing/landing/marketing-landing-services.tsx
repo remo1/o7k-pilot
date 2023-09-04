@@ -14,27 +14,27 @@ const COLORS = ['primary', 'secondary', 'success', 'warning'] as const;
 const SERVICES = [
   {
     name: 'Cena',
-    icon: '/assets/icons/service/ic_service_seo.svg',
+    icon: '/assets/icons/service/price.svg',
     content:
       'Uzyskaj najnowocześniejszą technologię inteligentnego domu za ułamek standardowej ceny',
     path: '#',
   },
   {
     name: 'Bezpieczeństwo',
-    icon: '/assets/icons/service/ic_service_mail.svg',
+    icon: '/assets/icons/service/security.svg',
     content: 'Zaawansowane środki bezpieczeństwa, aby chronić Twój dom i dane',
     path: '#',
   },
   {
     name: 'Kontrola',
-    icon: '/assets/icons/service/ic_service_analysis.svg',
+    icon: '/assets/icons/service/configure.svg',
     content:
       'Zarządzaj światłem, temperaturą, zabezpieczeniami i nie tylko—wszystko z jednej aplikacji',
     path: '#',
   },
   {
     name: 'Ewolucja',
-    icon: '/assets/icons/service/ic_service_bullhorn.svg',
+    icon: '/assets/icons/service/upgrade.svg',
     content: 'Nasz system jest zaprojektowany do ewolucji. Oczekuj nowych funkcji i ulepszeń',
     path: '#',
   },
