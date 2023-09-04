@@ -16,7 +16,7 @@ const CORE_VALUES = [
   },
   {
     "title": "Bezpieczna lokalna sieć",
-    "description": "Skonfigurowana sieć LAN i Wifi, zapewniająca ochronę Twoich danych i szybkość działania",
+    "description": "Skonfigurowana sieć LAN i WiFi, zapewniająca ochronę Twoich danych i szybkość działania",
     "icon": "/assets/icons/ic_file.svg"
   },
   {
