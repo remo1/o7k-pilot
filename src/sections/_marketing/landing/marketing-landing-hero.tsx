@@ -1,5 +1,4 @@
 import Box from '@mui/material/Box';
-import Fab from '@mui/material/Fab';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Unstable_Grid2';
@@ -9,7 +8,6 @@ import { alpha, useTheme } from '@mui/material/styles';
 
 import Image from 'src/components/image';
 import { bgGradient } from 'src/theme/css';
-import Iconify from 'src/components/iconify';
 import { useResponsive } from 'src/hooks/use-responsive';
 
 // ----------------------------------------------------------------------

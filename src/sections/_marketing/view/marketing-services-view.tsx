@@ -2,8 +2,8 @@
 
 import { _testimonials, _marketingPosts } from 'src/_mock';
 
-import MarketingNewsletter from '../marketing-newsletter';
 import WhoWeAre from '../services/who-we-are';
+import MarketingNewsletter from '../marketing-newsletter';
 import MarketingServicesHero from '../services/marketing-services-hero';
 import MarketingTestimonial from '../testimonial/marketing-testimonial';
 import MarketingLandingFreeSEO from '../landing/marketing-landing-free-seo';

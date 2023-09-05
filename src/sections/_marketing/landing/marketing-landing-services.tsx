@@ -45,7 +45,7 @@ const SERVICES = [
 export default function MarketingLandingServices() {
   return (
     <Container
-      id='korzysci'
+      id="korzysci"
       sx={{
         py: { xs: 5, md: 10 },
       }}
@@ -101,7 +101,7 @@ type ServiceItemProps = {
 };
 
 function ServiceItem({ service, index }: ServiceItemProps) {
-  const { name, icon, content, path } = service;
+  const { name, icon, content } = service;
 
   return (
     <Card
